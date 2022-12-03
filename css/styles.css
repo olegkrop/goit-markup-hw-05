@@ -222,8 +222,14 @@ body {
   border-radius: 4px;
   border: 0 solid transparent;
   display: inline-block;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.button:hover,
+.button:focus {
+  color: var(--accent-color);
+  background-color: var(--white-color);
+}
 /* Features */
 .features {
   display: flex;
