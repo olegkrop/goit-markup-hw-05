@@ -273,9 +273,23 @@ body {
   gap: 30px;
   padding-left: 0;
 }
-
-
-
+.wwd-list {
+  position: relative;
+}
+.wwd-text {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 27px 0px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
 /* Our Team */
 .team {
   background-color: var(--team-background);
