@@ -20,37 +20,43 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!--Заголовок-->
-
+    <!--Header-->
     <header class="section-header">
-      <div class="container">
-        <div class="make-flex site-header">
-          <nav class="make-flex center">
-            <a class="logo link" href="./index.html"
-              ><span class="logo-left">Web</span>Studio</a
-            >
-            <ul class="list make-flex center">
-              <li class="item">
-                <a href="./index.html" class="current site-nav link">Студія</a>
-              </li>
-              <li class="item">
-                <a href="./portfolio.html" class="site-nav link">Портфоліо</a>
-              </li>
-              <li><a href="#contacts" class="site-nav link">Контакти</a></li>
-            </ul>
-          </nav>
-          <ul class="list make-flex center flexible contact-list">
-            <li class="item contact-link">
-              <a href="mailto:info@devstudio.com" class="link email-phone">
-                <svg class="icon" width="16" height="12">
+      <div class="container header-flex">
+        <!--Header Logo-->
+        <div>
+          <a class="logo link" href="./index.html"
+            ><span class="logo-left">Web</span>Studio</a
+          >
+        </div>
+        <!--Header Navigation-->
+        <div>
+          <ul class="nav-gap">
+            <li class="list">
+              <a href="./index.html" class="link nav-text current">Студія</a>
+            </li>
+            <li class="list">
+              <a href="./portfolio.html" class="link nav-text">Портфоліо</a>
+            </li>
+            <li class="list">
+              <a href="#contacts" class="link nav-text">Контакти</a>
+            </li>
+          </ul>
+        </div>
+        <!--Header Contacts-->
+        <div class="contacts-left">
+          <ul class="contacts-flex">
+            <li class="list">
+              <a href="mailto:info@devstudio.com" class="link contacts-text">
+                <svg class="contacts-icon" width="16" height="12">
                   <use href="./images/symbol-defs.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </li>
-            <li class="item contact-link">
-              <a href="tel:+380961111111" class="link email-phone">
-                <svg class="icon" width="16" height="12">
+            <li class="list">
+              <a href="tel:+380961111111" class="link contacts-text">
+                <svg class="contacts-icon" width="10" height="16">
                   <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a
@@ -62,24 +68,21 @@
     </header>
 
     <main>
-      <!--Секція Hero-->
-
+      <!--Hero-->
       <section class="section hero">
         <div class="container hero image-hero">
           <h1 class="hero-title">Ефективні рішення для <br />вашого бізнесу</h1>
           <button type="button" class="button finger">Замовити послугу</button>
         </div>
       </section>
-
-      <!--Секція Наші переваги-->
-
-      <section class="section-advant section">
+      <!--Qualities-->
+      <section class="section">
         <div class="container">
           <h2 hidden>Наші переваги</h2>
-          <ul class="list flex">
-            <li class="item">
-              <div class="block">
-                <svg class="features-icon" width="70" height="70">
+          <ul class="features list">
+            <li>
+              <div class="features-block">
+                <svg width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
@@ -89,9 +92,9 @@
                 формування позиції.
               </p>
             </li>
-            <li class="item">
-              <div class="block">
-                <svg class="features-icon" width="70" height="70">
+            <li>
+              <div class="features-block">
+                <svg width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
@@ -101,9 +104,9 @@
                 тягне у себе.
               </p>
             </li>
-            <li class="item">
-              <div class="block">
-                <svg class="features-icon" width="70" height="70">
+            <li>
+              <div class="features-block">
+                <svg width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
@@ -112,9 +115,9 @@
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="item">
-              <div class="block">
-                <svg class="features-icon" width="70" height="70">
+            <li>
+              <div class="features-block">
+                <svg width="70" height="70">
                   <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
@@ -128,30 +131,30 @@
         </div>
       </section>
 
-      <!--Секція Чим ми займаємося-->
+      <!--What We Do-->
 
-      <section class="wwd section">
+      <section class="section">
         <div class="container">
           <h2 class="title">Чим ми займаємося</h2>
-          <ul class="list wwd-flex">
-            <li class="item">
+          <ul class="list wwd">
+            <li class="list">
               <img
                 src="./images/hands.jpeg"
                 alt="Руки на клавіатурі"
                 width="370"
               />
             </li>
-            <li class="item">
+            <li class="list">
               <img src="./images/templates.jpeg" alt="Шаблони" width="370" />
             </li>
-            <li class="item">
+            <li class="list">
               <img src="./images/palette.jpeg" alt="Палітра" width="370" />
             </li>
           </ul>
         </div>
       </section>
 
-      <!--Секція наша команда-->
+      <!--СOur Team-->
 
       <section class="team section">
         <div class="container">
@@ -350,36 +353,32 @@
       </section>
 
       <!--Секція постійних клієнтів-->
-
-      <section class="section-clients">
+      <section class="section">
         <div class="container">
           <h2 class="title">Постоянные клиенты</h2>
-          <ul class="clients-list list">
-            <li class="item">
+          <ul class="client-list">
+            <li class="list">
               <a class="client-link link" href="">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./images/symbol-defs.svg#icon-logo1"></use>
                 </svg>
               </a>
             </li>
-
-            <li class="item">
+            <li class="list">
               <a class="client-link link" href="">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./images/symbol-defs.svg#icon-logo2"></use>
                 </svg>
               </a>
             </li>
-
-            <li class="item">
+            <li class="list">
               <a class="client-link link" href="">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./images/symbol-defs.svg#icon-logo3"></use>
                 </svg>
               </a>
             </li>
-
-            <li class="item">
+            <li class="list">
               <a class="client-link link" href="">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./images/symbol-defs.svg#icon-logo4"></use>
@@ -387,15 +386,14 @@
               </a>
             </li>
 
-            <li class="item">
+            <li class="list">
               <a class="client-link link" href="">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./images/symbol-defs.svg#icon-logo5"></use>
                 </svg>
               </a>
             </li>
-
-            <li class="item">
+            <li class="list">
               <a class="client-link link" href="">
                 <svg class="client-icon" width="106" height="60">
                   <use href="./images/symbol-defs.svg#icon-logo6"></use>
@@ -407,78 +405,78 @@
       </section>
     </main>
 
-    <footer class="site-footer">
+    <!--Footer-->
+    <footer class="section-footer">
       <div class="container">
-        <!--Секція контактів-->
-        <div class="make-two-columns">
+        <div class="footer-divide">
           <div>
-            <a class="logo link logo-white push-down" href="./index.html"
+            <!--Footer Logo-->
+            <a class="logo link logo-white push-margins" href="./index.html"
               ><span class="logo-left">Web</span>Studio</a
             >
+            <!--Footer Contacts-->
             <address id="contacts">
-              <ul class="list contact-flex">
-                <li>
+              <ul class="list footer-contacts">
+                <li class="list">
                   <a
-                    class="contact link"
+                    class="link footer-contact"
                     href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     >м. Київ, пр-т Лесі Украінки, 26</a
                   >
                 </li>
-                <li>
+                <li class="list">
                   <a
-                    class="contact link darkened"
+                    class="link footer-contact darkened"
                     href="mailto:info@devstudio.com"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li>
-                  <a class="contact link darkened" href="tel:+380961111111"
+                <li class="list">
+                  <a
+                    class="link footer-contact darkened"
+                    href="tel:+380961111111"
                     >+38 096 111 11 11</a
                   >
                 </li>
               </ul>
             </address>
           </div>
-          <div class="social appeal-list">
-            <div>
-              <p class="appeal">приєднуйтесь</p>
-            </div>
-            <div>
-              <ul class="make-line">
-                <li class="item">
-                  <a class="social-link" href="">
-                    <svg class="icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                </li>
-
-                <li class="item">
-                  <a class="social-link" href="">
-                    <svg class="icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="item">
-                  <a class="social-link" href="">
-                    <svg class="icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                </li>
-
-                <li class="item">
-                  <a class="social-link" href="">
-                    <svg class="icon" width="20" height="20">
-                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
+          <!--Footer Appeal-->
+          <div class="social-margin">
+            <p class="appeal">приєднуйтесь</p>
+            <!--Footer Social Networks List-->
+            <ul class="footer-social-list">
+              <li class="footer-social-item list">
+                <a class="footer-social-link" href="">
+                  <svg class="footer-social-icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item list">
+                <a class="footer-social-link" href="">
+                  <svg class="footer-social-icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item list">
+                <a class="footer-social-link" href="">
+                  <svg class="footer-social-icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-item list">
+                <a class="footer-social-link" href="">
+                  <svg class="footer-social-icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
