@@ -14,6 +14,8 @@
   --icon-color: #AFB1B8;
   --icon-background: #ffffff10;
   --overlay-background: rgba(33, 150, 243, 0.9);
+  --hero-button-active:#188CE8;
+
 }
 
 /* reset styles */
@@ -228,9 +230,9 @@ body {
 
 .button:hover,
 .button:focus {
-  color: var(--accent-color);
-  background-color: var(--white-color);
-}
+  color: var(--white-color);
+  background-color: var(--hero-button-active);
+}  
 
 /* Features */
 .features {
